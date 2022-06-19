@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Container Onclick Function</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+        .main1{
+            height: 400px;
+            width: 600px;
+            border: 1px black solid;
+        }
+        .main2{
+            height: 197px;
+            width: 600px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .d1,.d2,.d3{
+            height: 197px;
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main1">
+            <img src="s1.jpg" height="400" width="600" id="main1" alt="">
+        </div>
+    <button onclick="phone(this.src)" type="submit">Button</button>
+        <div class="main2">
+            <div class="d1">
+                <img src="s2.jpg" height="197" width="200" onclick="phone(this.src)" alt="">
+            </div>
+            <div class="d2">
+                <img src="s3.webp" height="197" width="200" onclick="phone(this.src)" alt="">
+            </div>
+            <div class="d3">
+                <img src="s4.webp" height="197" width="200" onclick="phone(this.src)" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        function phone(Galaxy){
+            document.getElementById("main1").src=Galaxy;
+        }
+    </script>
+</body>
+</html>
